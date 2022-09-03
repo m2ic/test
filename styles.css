@@ -7,14 +7,13 @@ p{
   color: #8F8F8F;
 }
 
-h1{
-
-}
-
 h4{
   color: #C55300;
 }
 
+br{
+  display: none;
+}
 
 /* title section */
 
@@ -109,6 +108,39 @@ h4{
 .description{
   padding-right: 100px;
   padding-top: 15px;
+}
+
+@media (max-width: 990px) {
+  .container-text {
+    padding-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+  }
+  .mapouter{
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+  }
+
+  #welcome{
+    height: 1100px;
+  }
+
+  .content{
+    width: 700px;
+    height: 400px;
+  }
+
+  .banner-headline{
+    font-size: 80px;
+    height: 400px;
+  }
+
+  br{
+    display: inline;
+  }
+
 }
 
 
