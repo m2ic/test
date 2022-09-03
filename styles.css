@@ -1,0 +1,292 @@
+
+body{
+  background-color: #FDF6EC;
+}
+
+p{
+  color: #8F8F8F;
+}
+
+h1{
+
+}
+
+h4{
+  color: #C55300;
+}
+
+
+/* title section */
+
+/* navbar */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+/* banner image */
+.banner-image{
+  background-image: url("images/title-img2.jpg");
+  background-size: cover;
+}
+
+.content{
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  opacity: 1;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.banner-headline{
+  font-family: 'Gabriela', serif;
+  font-size: 50px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .005em; /* Adjust as needed */
+  height: 60px;
+  animation:
+    typing 3.0s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff; }
+}
+
+/* welcome section */
+
+#welcome{
+  height: 800px;
+  width: auto;
+  padding-top: 200px;
+}
+
+.sub-heading{
+  font-family: 'Gabriela', serif;
+  color: #C55300;
+}
+
+.row{
+  margin-left: 60px;
+}
+
+.mapouter{
+  padding-top: 230px;
+  text-align:right;
+  height:350px;
+  width:500px;
+}
+
+.gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  height:350px;
+  width:500px;
+}
+
+.description{
+  padding-right: 100px;
+  padding-top: 15px;
+}
+
+
+.fa-icon{
+  font-size: 50px;
+  color: #A64B2A;
+}
+
+
+/* rooms section */
+
+#rooms{
+  padding: 50px 20%;
+  font-family: "Montserrat";
+}
+
+.card{
+  background-color: #FDF6EC;
+  margin-bottom: 20px;
+}
+
+.rooms-img{
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+.features-list{
+  list-style-type: none;
+}
+
+.features-item{
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0,0,0,0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+
+#reviews{
+  height: 800px;
+  width: auto;
+}
+
+
+
+.divider{								/* minor cosmetics */
+  font-family: 'Gabriela', serif;
+  display: table;
+  font-size: 24px;
+  text-align: center;
+  width: 75%; 						/* divider width */
+  margin: 40px auto;					/* spacing above/below */
+}
+.divider span{
+  display: table-cell;
+  position: relative;
+}
+.divider span:first-child,
+   .divider span:last-child{
+      width: 50%;
+      top: 13px;							/* adjust vertical align */
+      -moz-background-size: 100% 2px; 	/* line width */
+      background-size: 100% 2px; 			/* line width */
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+}
+.divider span:first-child{				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#C55300));
+  background-image: -webkit-linear-gradient(180deg, transparent, #C55300);
+  background-image: -moz-linear-gradient(180deg, transparent, #C55300);
+  background-image: -o-linear-gradient(180deg, transparent, #C55300);
+  background-image: linear-gradient(90deg, transparent, #C55300);
+}
+.divider span:nth-child(2){
+  color: #C55300;
+  padding: 0px 5px;
+  width: auto;
+  white-space:
+  nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C55300), to(transparent));
+  background-image: -webkit-linear-gradient(180deg, #C55300, transparent);
+  background-image: -moz-linear-gradient(180deg, #C55300, transparent);
+  background-image: -o-linear-gradient(180deg, #C55300, transparent);
+  background-image: linear-gradient(90deg, #C55300, transparent);
+}
