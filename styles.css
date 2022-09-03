@@ -115,6 +115,24 @@ br{
 }
 
 @media (max-width: 990px) {
+
+  .container{
+    width: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .brand{
+    font-size: 65px;
+    padding-left: 10px;
+  }
+
+  .navbar-toggler{
+    font-size: 50px;
+    margin-left: 40px;
+  }
+
   .container-text {
     padding-top: 50px;
     margin-left:auto;
