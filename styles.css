@@ -114,23 +114,28 @@ br{
   padding-top: 15px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1024px) {
 
   .container{
-    width: 1000px;
+    width: 100%;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
   }
   .brand{
-    font-size: 65px;
+    font-size: 55px;
     padding-left: 10px;
   }
 
   .navbar-toggler{
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 40px;
+  }
+
+  .banner-image{
+    background-image: url("images/title-img2-mobile.jpg");
+    background-size: cover;
   }
 
   .container-text {
