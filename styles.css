@@ -141,6 +141,11 @@ br{
     display: inline;
   }
 
+  .reviews-container{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
 }
 
 
